@@ -17,7 +17,7 @@ function initFooter() {
                         <a href="/pages/services.html" class="hover:text-[#E3B04A] transition-colors">Services</a>
                         <a href="/pages/portfolio.html" class="hover:text-[#E3B04A] transition-colors">Portfolio</a>
                         <a href="/pages/about.html" class="hover:text-[#E3B04A] transition-colors">About</a>
-                        <a href="/pages/pricing.html" class="hover:text-[#E3B04A] transition-colors">Pricing</a>
+                        <a href="build.html" class="hover:text-[#E3B04A] transition-colors">Build</a>
                     </div>
                 </div>
                 

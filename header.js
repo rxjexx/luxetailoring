@@ -14,7 +14,7 @@ function initHeader() {
                 <a href="portfolio.html" class="text-white/50 hover:text-[#E3B04A] transition-colors duration-300">Portfolio</a>
                 <a href="reviews.html" class="text-white/50 hover:text-[#E3B04A] transition-colors duration-300">Reviews</a>
                 <a href="about.html" class="text-white/50 hover:text-[#E3B04A] transition-colors duration-300">About</a>
-                <a href="pricing.html" class="text-white/50 hover:text-[#E3B04A] transition-colors duration-300">Pricing</a>
+                <a href="build.html" class="text-white/50 hover:text-[#E3B04A] transition-colors duration-300">Build</a>
             </nav>
 
             <div class="flex items-center gap-6 z-10">
@@ -34,7 +34,7 @@ function initHeader() {
                 <a href="portfolio.html" class="text-white/70 hover:text-[#E3B04A] transition-colors text-sm uppercase tracking-wider">Portfolio</a>
                 <a href="reviews.html" class="text-white/70 hover:text-[#E3B04A] transition-colors text-sm uppercase tracking-wider">Reviews</a>
                 <a href="about.html" class="text-white/70 hover:text-[#E3B04A] transition-colors text-sm uppercase tracking-wider">About</a>
-                <a href="pricing.html" class="text-white/70 hover:text-[#E3B04A] transition-colors text-sm uppercase tracking-wider">Pricing</a>
+                <a href="build.html" class="text-white/70 hover:text-[#E3B04A] transition-colors text-sm uppercase tracking-wider">Build</a>
             </nav>
         </header>
     `;

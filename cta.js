@@ -16,8 +16,8 @@ function initCTA() {
                     <a href="contact.html" class="px-12 py-5 bg-[#E3B04A] text-[#0C0A09] text-sm uppercase tracking-widest rounded-full border border-[#E3B04A] hover:bg-transparent hover:text-[#E3B04A] transition-all duration-500 font-semibold shadow-[0_0_30px_rgba(227,176,74,0.4)] hover:shadow-[0_0_60px_rgba(227,176,74,0.6)]">
                         Get in Touch
                     </a>
-                    <a href="pricing.html" class="px-12 py-5 rounded-full bg-transparent border border-[#C05C3B] text-[#C05C3B] text-sm uppercase tracking-widest hover:bg-[#C05C3B]/10 transition-all duration-500 font-semibold">
-                        Check Pricing
+                    <a href="build.html" class="px-12 py-5 rounded-full bg-transparent border border-[#C05C3B] text-[#C05C3B] text-sm uppercase tracking-widest hover:bg-[#C05C3B]/10 transition-all duration-500 font-semibold">
+                        Start Building
                     </a>
                 </div>
 
