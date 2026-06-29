@@ -1,0 +1,125 @@
+:root {
+    --font-serif: 'Newsreader', serif;
+    --font-display: 'Cormorant Garamond', 'Newsreader', serif;
+    --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+    --color-primary: #E3B04A;
+    --color-accent: #C05C3B;
+    --color-secondary: #234232;
+    --color-bg: #0C0A09;
+    --color-text: #FAFAF9;
+}
+
+/* Fluid Ambient Motion */
+@keyframes drift {
+    0% { transform: translate(0, 0) scale(1); opacity: 0.06; }
+    50% { transform: translate(3vw, -4vh) scale(1.05); opacity: 0.1; }
+    100% { transform: translate(0, 0) scale(1); opacity: 0.06; }
+}
+
+.ambient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(140px);
+    animation: drift 25s infinite ease-in-out;
+    pointer-events: none;
+}
+
+/* Marquee */
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    animation: marquee 40s linear infinite;
+    display: flex;
+    width: max-content;
+}
+
+.mask-edges {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+/* Cinematic reveal utilities */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    filter: blur(4px);
+    transition: all 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform, filter;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+/* Custom Form Elements Customization */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) opacity(0.3);
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 0.8;
+}
+
+select option {
+    background-color: #0C0A09;
+    color: #FAFAF9;
+    font-weight: 300;
+}
+
+/* Shimmer Effect for Buttons */
+.shimmer-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shimmer-button:hover::before {
+    left: 150%;
+}
+
+/* Glow Effects */
+.glow-cyan {
+    box-shadow: 0 0 20px rgba(227, 176, 74, 0.3);
+}
+
+.glow-cyan:hover {
+    box-shadow: 0 0 40px rgba(227, 176, 74, 0.6);
+}
+
+.glow-pink {
+    box-shadow: 0 0 20px rgba(192, 92, 59, 0.3);
+}
+
+.glow-pink:hover {
+    box-shadow: 0 0 40px rgba(192, 92, 59, 0.6);
+}
+
+/* Card Hover Effect */
+.card-hover {
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+}
+
+/* Text Gradient */
+.gradient-text {
+    background: linear-gradient(135deg, #00D9FF, #FF006E, #00D9FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
