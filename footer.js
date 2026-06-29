@@ -35,7 +35,7 @@ function initFooter() {
             <div class="max-w-[90rem] mx-auto flex flex-col md:flex-row justify-between items-center gap-8 pt-8 border-t border-white/[0.04] text-[10px] text-white/30 uppercase tracking-[0.2em] font-light" style="font-family: var(--font-sans);">
                 <p>© 2026 Luxe Tailoring. All rights reserved.</p>
                 <div class="flex gap-8">
-                    <a href="/pages/terms.html" class="hover:text-[#E3B04A] transition-colors duration-300">Terms</a>
+                    <a href="terms.html" class="hover:text-[#E3B04A] transition-colors duration-300">Terms</a>
                 </div>
             </div>
         </footer>
