@@ -68,7 +68,7 @@ function initContact() {
         </section>
     `;
 
-    // Handle form submission
+    // Handle form submission with Formspree
     setTimeout(() => {
         const form = document.getElementById('contact-form');
         if (form) {
@@ -76,21 +76,14 @@ function initContact() {
                 e.preventDefault();
 
                 const formData = new FormData(form);
-                const data = {
-                    name: formData.get('name'),
-                    email: formData.get('email'),
-                    business: formData.get('business'),
-                    message: formData.get('message')
-                };
 
                 try {
-                    // Send to Formspree (free form service)
-                    const response = await fetch('https://formspree.io/f/xjkvggkl', {
+                    const response = await fetch('https://formspree.io/f/mwvdqyvo', {
                         method: 'POST',
+                        body: formData,
                         headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(data)
+                            'Accept': 'application/json'
+                        }
                     });
 
                     if (response.ok) {
