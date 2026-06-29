@@ -78,7 +78,7 @@ function initContact() {
                 const formData = new FormData(form);
 
                 try {
-                    const response = await fetch('https://formspree.io/f/mwvdqyvo', {
+                    const response = await fetch('https://formspree.io/f/mpqglbdw', {
                         method: 'POST',
                         body: formData,
                         headers: {
