@@ -5,7 +5,7 @@ function initHero() {
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-12 px-6">
             <div class="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center gap-10 fade-in-section">
                 <h1 class="text-6xl md:text-8xl lg:text-9xl tracking-tighter leading-[0.85] uppercase font-extralight text-transparent bg-clip-text bg-gradient-to-b from-white via-white/90 to-white/40 drop-shadow-sm" style="font-family: var(--font-display);">
-                    Tailering Your Sites <br> 
+                    Tailoring Your Sites <br> 
                     <span class="italic lowercase text-[#E3B04A] opacity-90 block mt-4 font-light tracking-normal drop-shadow-[0_0_40px_rgba(227,176,74,0.25)]" style="font-family: var(--font-serif);">to what they deserve</span>
                 </h1>
                 <p class="text-xs max-w-2xl mx-auto text-white/60 uppercase tracking-[0.25em] mt-2 font-light flex flex-col gap-4" style="font-family: var(--font-sans);">
