@@ -10,7 +10,7 @@ function initContact() {
                 </div>
 
                 <!-- Notification Toast -->
-                <div id="toast-notification" class="fixed top-6 right-6 bg-[#E3B04A] text-[#0C0A09] px-6 py-4 rounded-lg font-semibold shadow-[0_0_30px_rgba(227,176,74,0.4)] opacity-0 transform translate-x-96 transition-all duration-500 pointer-events-none z-50">
+                <div id="toast-notification" class="fixed top-6 right-6 md:right-8 bg-[#E3B04A] text-[#0C0A09] px-4 md:px-6 py-3 md:py-4 rounded-lg font-semibold shadow-[0_0_30px_rgba(227,176,74,0.4)] opacity-0 transform translate-x-96 transition-all duration-500 pointer-events-none z-50 text-xs md:text-sm max-w-xs md:max-w-sm mx-auto">
                     ✓ Message sent! We'll get back to you within 24 hours.
                 </div>
 

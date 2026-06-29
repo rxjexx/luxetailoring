@@ -33,12 +33,7 @@ function initPortfolio() {
                     </div>
                 </div>
 
-                <div class="mt-8 text-center">
-                    <p class="text-white/60 mb-6">Building more. Got a project? Let's talk.</p>
-                    <a href="contact.html" class="px-10 py-4 bg-[#E3B04A] text-[#0C0A09] text-xs uppercase tracking-widest rounded-full border border-[#E3B04A] hover:bg-transparent hover:text-[#E3B04A] transition-all duration-500 font-semibold shadow-[0_0_20px_rgba(227,176,74,0.3)]">
-                        Start Your Project
-                    </a>
-                </div>
+
             </div>
         </section>
     `;

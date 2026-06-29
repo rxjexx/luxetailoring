@@ -10,110 +10,108 @@ function initPricing() {
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
-                    <!-- Basic -->
-                    <div class="rounded-2xl p-8 bg-gradient-to-br from-[#E3B04A]/5 to-transparent border border-[#E3B04A]/20 hover:border-[#E3B04A]/60 hover:shadow-[0_0_40px_rgba(227,176,74,0.2)] transition-all duration-500 flex flex-col">
-                        <h3 class="text-2xl font-semibold text-white mb-2">Basic</h3>
-                        <p class="text-white/60 text-sm mb-6">5 pages. Clean site. Gets the job done.</p>
-                        <div class="mb-8">
-                            <div class="text-5xl font-bold text-[#E3B04A]">$799</div>
-                            <p class="text-white/50 text-sm mt-2">One-time</p>
+                    <!-- Single Pricing Card -->
+                    <div class="md:col-span-3 rounded-2xl p-8 md:p-12 bg-gradient-to-br from-[#E3B04A]/10 to-[#C05C3B]/5 border border-[#E3B04A]/40 hover:border-[#C05C3B]/60 hover:shadow-[0_0_60px_rgba(227,176,74,0.3)] transition-all duration-500 flex flex-col ring-2 ring-[#E3B04A]/50 relative pt-24">
+                        <div class="absolute -top-14 md:-top-12 right-4 md:right-8 backdrop-blur-xl bg-gradient-to-br from-white/20 to-white/10 border border-white/40 px-4 md:px-6 py-2 md:py-3 rounded-full text-xs font-semibold whitespace-nowrap shadow-[0_8px_32px_rgba(227,176,74,0.2)] hover:shadow-[0_8px_40px_rgba(227,176,74,0.3)] transition-all duration-300 flex items-center gap-2">
+                            <iconify-icon icon="solar:star-linear" width="16" height="16" class="text-[#E3B04A]"></iconify-icon>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#E3B04A] to-[#C05C3B]">$300 LESS THAN ANYONE</span>
                         </div>
-                        <ul class="space-y-4 mb-8 flex-grow text-white/70 text-sm">
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>5 custom pages</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>Looks good on phones</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>Google friendly</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>Contact form</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>30 days of help</span>
-                            </li>
-                        </ul>
-                        <a href="contact.html" class="w-full py-3 rounded-lg border border-[#E3B04A] text-[#E3B04A] font-semibold hover:bg-[#E3B04A]/10 transition-colors text-center">
-                            Get Started
-                        </a>
-                    </div>
+                        
+                        <div class="flex flex-col items-center mb-12 pb-8 border-b border-white/10 w-full">
+                            <iconify-icon icon="solar:gift-linear" width="32" height="32" class="text-[#E3B04A] mb-6 md:mb-4 md:w-10 md:h-10"></iconify-icon>
+                            <h3 class="text-3xl md:text-4xl font-semibold text-white tracking-tight uppercase text-center" style="font-family: var(--font-display);">Custom Website</h3>
+                        </div>
 
-                    <!-- Advanced (Popular) -->
-                    <div class="rounded-2xl p-8 bg-gradient-to-br from-[#E3B04A]/10 to-[#C05C3B]/5 border border-[#E3B04A]/40 hover:border-[#C05C3B]/60 hover:shadow-[0_0_60px_rgba(227,176,74,0.3)] transition-all duration-500 flex flex-col ring-2 ring-[#E3B04A]/50">
-                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#C05C3B] text-white px-4 py-1 rounded-full text-xs font-semibold">MOST POPULAR</div>
-                        <h3 class="text-2xl font-semibold text-white mb-2">Advanced</h3>
-                        <p class="text-white/60 text-sm mb-6">As many pages as you need. Better features.</p>
-                        <div class="mb-8">
-                            <div class="text-5xl font-bold text-[#E3B04A]">$1,999</div>
-                            <p class="text-white/50 text-sm mt-2">One-time</p>
-                        </div>
-                        <ul class="space-y-4 mb-8 flex-grow text-white/70 text-sm">
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#C05C3B] flex-shrink-0"></iconify-icon>
-                                <span>Unlimited pages</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#C05C3B] flex-shrink-0"></iconify-icon>
-                                <span>Better design</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#C05C3B] flex-shrink-0"></iconify-icon>
-                                <span>Full SEO setup</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#C05C3B] flex-shrink-0"></iconify-icon>
-                                <span>Simple e-commerce</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#C05C3B] flex-shrink-0"></iconify-icon>
-                                <span>3 months of help</span>
-                            </li>
-                        </ul>
-                        <a href="contact.html" class="w-full py-3 rounded-lg bg-[#C05C3B] text-white font-semibold hover:bg-[#C05C3B]/80 transition-colors text-center">
-                            Let's Talk
-                        </a>
-                    </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 items-start w-full">
+                            <!-- Pricing Section -->
+                            <div class="flex flex-col items-center md:col-span-1">
+                                <div class="mb-8 text-center">
+                                    <div class="text-5xl md:text-6xl font-bold text-[#E3B04A] mb-2">$800</div>
+                                    <p class="text-white/50 text-sm">One-time</p>
+                                </div>
+                                <a href="contact.html" class="w-full py-3 md:py-4 rounded-xl bg-[#E3B04A] text-[#0C0A09] font-semibold hover:bg-[#C05C3B] transition-colors text-center text-xs uppercase tracking-widest">
+                                    Contact
+                                </a>
+                            </div>
 
-                    <!-- Pro -->
-                    <div class="rounded-2xl p-8 bg-gradient-to-br from-[#E3B04A]/5 to-transparent border border-[#E3B04A]/20 hover:border-[#E3B04A]/60 hover:shadow-[0_0_40px_rgba(227,176,74,0.2)] transition-all duration-500 flex flex-col">
-                        <h3 class="text-2xl font-semibold text-white mb-2">Pro</h3>
-                        <p class="text-white/60 text-sm mb-6">Full custom builds. Everything included.</p>
-                        <div class="mb-8">
-                            <div class="text-5xl font-bold text-[#E3B04A]">$3,999</div>
-                            <p class="text-white/50 text-sm mt-2">One-time</p>
+                            <!-- Features Section -->
+                            <div class="md:col-span-2">
+                                <h4 class="text-lg md:text-xl font-semibold text-white mb-6 uppercase tracking-wide text-center md:text-left">Everything Included</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">Custom Design</p>
+                                            <p class="text-white/60 text-xs md:text-sm">Tailored to your brand, not a template</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">Hand-Coded</p>
+                                            <p class="text-white/60 text-xs md:text-sm">Clean code, no bloat, lightning fast</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">Device Optimized</p>
+                                            <p class="text-white/60 text-xs md:text-sm">Looks perfect on phones, tablets, desktop</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">SEO Ready</p>
+                                            <p class="text-white/60 text-xs md:text-sm">Built for Google from day one</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">Contact Forms</p>
+                                            <p class="text-white/60 text-xs md:text-sm">Get messages directly to your email</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">Full Source Code</p>
+                                            <p class="text-white/60 text-xs md:text-sm">You own everything, no lock-in</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#C05C3B] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">30 Days of Support</p>
+                                            <p class="text-white/60 text-xs md:text-sm">Bugs fixed, questions answered</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#C05C3B] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">Fast Turnaround</p>
+                                            <p class="text-white/60 text-xs md:text-sm">Built and delivered in weeks, not months</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-3 items-start text-sm md:text-base">
+                                        <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#C05C3B] flex-shrink-0 mt-1 md:w-6 md:h-6"></iconify-icon>
+                                        <div>
+                                            <p class="font-semibold text-white text-sm md:text-base">Any Type of Site</p>
+                                            <p class="text-white/60 text-xs md:text-sm">Portfolio, business, small e-commerce</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="space-y-4 mb-8 flex-grow text-white/70 text-sm">
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>Unlimited everything</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>Real e-commerce</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>Payment processing</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>Inventory tracking</span>
-                            </li>
-                            <li class="flex gap-3 items-start">
-                                <iconify-icon icon="solar:check-circle-linear" width="20" height="20" class="text-[#E3B04A] flex-shrink-0"></iconify-icon>
-                                <span>6 months of help</span>
-                            </li>
-                        </ul>
-                        <a href="contact.html" class="w-full py-3 rounded-lg border border-[#E3B04A] text-[#E3B04A] font-semibold hover:bg-[#E3B04A]/10 transition-colors text-center">
-                            Get Quote
-                        </a>
                     </div>
                 </div>
 

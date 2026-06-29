@@ -27,8 +27,8 @@ function initWhyUs() {
                     <!-- Card 3 -->
                     <div class="card-hover rounded-2xl p-8 bg-gradient-to-br from-[#E3B04A]/5 to-[#C05C3B]/5 border border-[#E3B04A]/20 hover:border-[#C05C3B]/40 transition-all duration-500">
                         <iconify-icon icon="solar:smartphone-linear" width="32" height="32" class="text-[#E3B04A] mb-4"></iconify-icon>
-                        <h3 class="text-xl font-semibold text-white mb-3">Works on Every Phone</h3>
-                        <p class="text-white/60 text-sm leading-relaxed">Half your users are on mobile. We design for phones first. Desktop gets the upgrade.</p>
+                        <h3 class="text-xl font-semibold text-white mb-3">Works on Every Device</h3>
+                        <p class="text-white/60 text-sm leading-relaxed">Mobile, tablet, desktop. We design for all of them. Your site looks perfect everywhere.</p>
                     </div>
 
                     <!-- Card 4 -->
