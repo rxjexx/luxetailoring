@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;1,9..40,200;1,9..40,300;1,9..40,600&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,200;1,6..72,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body class="bg-[#0C0A09] text-[#FAFAF9] overflow-x-hidden antialiased font-extralight selection:bg-[#E3B04A]/40 selection:text-white" style="font-family: var(--font-serif);">
     
@@ -49,32 +49,42 @@
     <footer id="footer"></footer>
 
     <!-- Scripts -->
-    <script src="background.js"></script>
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
-    <script src="main.js"></script>
+    <script src="/js/components/background.js"></script>
+    <script src="/js/components/header.js"></script>
+    <script src="/js/components/footer.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.trustindex.io/libs/5d0f1d2c96d77900131a73d7.js"></script>
     <script>
         // Auto-update review count from TrustIndex widget
         function updateReviewCount() {
-            // Wait for TrustIndex widget to load
+            // Wait for TrustIndex widget to fully load
             setTimeout(() => {
-                const reviewElements = document.querySelectorAll('[data-review-count], .ti-review');
-                let reviewCount = reviewElements.length;
+                // Try multiple methods to get review count
+                let reviewCount = 0;
                 
-                // If no reviews found, try alternate method
+                // Method 1: Look for review items in iframe or shadow DOM
+                const reviewItems = document.querySelectorAll('[class*="review-item"], [class*="ti-review"], .ti-item, [data-review]');
+                reviewCount = reviewItems.length;
+                
+                // Method 2: Check for rating text that contains review count
                 if (reviewCount === 0) {
-                    const reviewTexts = document.querySelectorAll('[class*="review"]');
-                    reviewCount = reviewTexts.length;
+                    const allText = document.body.innerText;
+                    const ratingMatch = allText.match(/(\d+)\s*(?:review|rating)/i);
+                    if (ratingMatch) {
+                        reviewCount = parseInt(ratingMatch[1]);
+                    }
                 }
                 
-                // Update the display
+                // Update the display based on review count
                 const countSpan = document.getElementById('review-count');
-                if (reviewCount > 0) {
-                    countSpan.textContent = reviewCount;
+                if (reviewCount === 0) {
+                    countSpan.textContent = 'No Reviews Yet';
+                } else if (reviewCount === 1) {
+                    countSpan.textContent = '1 Review';
                 } else {
-                    countSpan.textContent = 'Real';
+                    countSpan.textContent = reviewCount + ' Reviews';
                 }
-            }, 2000);
+            }, 3000);
         }
         
         // Run on page load
