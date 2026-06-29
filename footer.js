@@ -14,9 +14,9 @@ function initFooter() {
                 <div class="md:col-span-3 flex flex-col gap-6 text-white/50 text-sm font-light" style="font-family: var(--font-sans);">
                     <h4 class="text-[#E3B04A] uppercase tracking-[0.25em] text-[10px] mb-2 font-light">Quick Links</h4>
                     <div class="flex flex-col gap-3 items-center md:items-start">
-                        <a href="/pages/services.html" class="hover:text-[#E3B04A] transition-colors">Services</a>
-                        <a href="/pages/portfolio.html" class="hover:text-[#E3B04A] transition-colors">Portfolio</a>
-                        <a href="/pages/about.html" class="hover:text-[#E3B04A] transition-colors">About</a>
+                        <a href="services.html" class="hover:text-[#E3B04A] transition-colors">Services</a>
+                        <a href="portfolio.html" class="hover:text-[#E3B04A] transition-colors">Portfolio</a>
+                        <a href="about.html" class="hover:text-[#E3B04A] transition-colors">About</a>
                         <a href="build.html" class="hover:text-[#E3B04A] transition-colors">Build</a>
                     </div>
                 </div>
